@@ -1,0 +1,115 @@
+:root {
+  --soft-white: rgb(245, 245, 245);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --pale-blue: rgb(206, 216, 251);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.card {
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px rgba(250, 250, 250, 0.8);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--soft-white);
+}
+.illustration-hero {
+  border-radius: 16px 16px 0 0;
+}
+.order-summary {
+  align-items: stretch;
+  height: min-content;
+}
+.summary-box {
+  width: 72%;
+  margin: 3em auto;
+}
+.summary-title {
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+.summary-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--desaturated-blue);
+  line-height: 1.6;
+}
+.summary-payment-plan {
+  margin: 1.4em 0;
+  background-color: var(--very-pale-blue);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+  padding: 1em 0;
+}
+.summary-music-icon {
+  justify-self: center;
+}
+.summary-plan-link {
+  color: var(--bright-blue);
+  font-weight: 700;
+  transition: 200ms;
+}
+.summary-plan-link:hover {
+  color: var(--desaturated-blue);
+}
+.payment-plan-title {
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.payment-plan-amount {
+  color: var(--desaturated-blue);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.btn-proceed {
+  padding: 1em;
+  margin: 0 auto 2.4em;
+  width: 100%;
+  color: var(--soft-white);
+  background-color: var(--bright-blue);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+.btn-proceed:hover {
+  background-color: var(--desaturated-blue);
+}
+.btn-cancel {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  background-color: inherit;
+  font-weight: 700;
+}
+.btn-cancel:hover {
+  color: var(--dark-blue);
+}
